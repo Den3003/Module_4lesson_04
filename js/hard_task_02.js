@@ -1,7 +1,7 @@
 'use strict'
 
 {
-  const minNumber = (a, b) => a - (Math.abs(a - b) + (a - b)) / 2;
-  
-  console.log(minNumber(-5, 5));
+  const customMin = (a, b) => a * (a < b) + b * (b <= a);
+
+  console.log(customMin(-13, 5));
 }
